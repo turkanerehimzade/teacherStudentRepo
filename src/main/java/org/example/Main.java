@@ -34,6 +34,8 @@ public class Main {
                 case 8:
                     System.out.println("Sistemden chixildi...");
                     System.exit(0);
+                default:
+                    System.out.println("Daxil etdiyiniz reqem menyuda yoxdur...");
             }
         }
     }
@@ -117,7 +119,6 @@ public class Main {
 
 //    public static void seeTeacherStudent() {
 //        Database.printTeacherStudent();
-//        controlTeacher();
 //    }
 
     public static void controlTeacher() {
@@ -125,6 +126,7 @@ public class Main {
         Teacher teacher = addTeacher(scanner);
         Student student = addStudent(scanner);
         TeacherStudent teacherStudent = createTeacherStudent(scanner, teacher, student);
+        Database.printTeacherStudent();//ferq?
         Database.teacherList(teacherStudent);
     }
     public static void controlStudent(){

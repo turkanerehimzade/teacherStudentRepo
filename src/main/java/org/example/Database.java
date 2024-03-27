@@ -7,8 +7,11 @@ public class Database {
     private static Student[] students=new Student[5];
     private static TeacherStudent[] teacherStudents=new TeacherStudent[5];
     private static int lastIndex=0;
+    private static int studentLastIndex=0;
+    private static int TeacherLastIndex=0;
+
     public static void addTeacher(Teacher teacher){
-            teachers[lastIndex++]=teacher;
+            teachers[TeacherLastIndex++]=teacher;
     }
     public static void printTeacher(){
         for(Teacher teacher:teachers){
@@ -18,7 +21,7 @@ public class Database {
         }
     }
     public static void addStudent(Student student){
-        students[lastIndex++]=student;
+        students[studentLastIndex++]=student;
     }
 
     public static void printStudent() {
