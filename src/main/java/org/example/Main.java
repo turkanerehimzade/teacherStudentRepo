@@ -25,7 +25,6 @@ public class Main {
                     seeStudent();
                     break;
                 case 6:
-//                    seeTeacherStudent();
                     controlTeacher();
                     break;
                 case 7:
@@ -117,9 +116,6 @@ public class Main {
         Database.printStudent();
     }
 
-//    public static void seeTeacherStudent() {
-//        Database.printTeacherStudent();
-//    }
 
     public static void controlTeacher() {
         Scanner scanner = new Scanner(System.in);
